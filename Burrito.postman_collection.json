@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "bb02786e-aed6-4122-a655-f1f4bc579deb",
+		"name": "Burrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tortilla\": \"corn\",\r\n    \"protein\": \"bean\",\r\n    \"salsa\": \"hot\",\r\n    \"vegetables\": [{\r\n        \"vegetable\": \"corn\"\r\n    }],\r\n    \"extras\": [{\r\n        \"extra\": \"avocado\"\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/orders/{orderId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orders/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
