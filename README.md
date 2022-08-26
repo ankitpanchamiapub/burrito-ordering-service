@@ -34,6 +34,3 @@ An order consists of:
 # Bonus
 * Address security, availability, performance
 * Postman test collection
-
-# Footnotes
-1. Prefer Java over Kotlin
